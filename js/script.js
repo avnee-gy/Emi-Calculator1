@@ -2,7 +2,7 @@ const loanAmount = document.getElementById("amt");
 const loanTenure = document.getElementById("time");
 const loanRate = document.getElementById("rate");
 
-// const out1 = document.querySelector(".val1");
+const out1 = document.querySelector(".val1");
 const out2 = document.querySelector(".val2");
 
 
@@ -14,6 +14,16 @@ loanTenure.oninput = (()=>{
     });
     loanTenure.onblur = (()=>{
         out2.classList.remove("show");
+    });
+
+    loanAmount.oninput = (()=>{
+    let value = loanAmount.value;
+    out1.textContent = value;
+    out1.style.left = (value/2) + "%";
+    out1.classList.add("show");
+    });
+    loanAmount.onblur = (()=>{
+        out1.classList.remove("show");
     });
 
 
