@@ -109,10 +109,26 @@ nav{
     outline: none;
 }
 
-.btn{
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;    
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 30px;
-}
+  }
 
 .btn-3 {
     background: rgb(1,196,223);
@@ -129,6 +145,9 @@ nav{
     display: block;
     width: 100%;
     height: 100%;
+    color: #7883d3;
+    text-decoration: solid;
+    align-items: center;
   }
   .btn-3:before,
   .btn-3:after {
@@ -136,7 +155,9 @@ nav{
     content: "";
     right: 0;
     top: 0;
-     background: rgba(1,196,223,1);
+    /* left: 0;
+    bottom: 0; */
+    background: rgba(1,196,223,1);
     transition: all 0.3s ease;
   }
   .btn-3:before {
@@ -148,11 +169,12 @@ nav{
     height: 2px;
   }
   .btn-3:hover{
-     background: transparent;
+    background: transparent;
     box-shadow: none;
   }
   .btn-3:hover:before {
     height: 100%;
+    
   }
   .btn-3:hover:after {
     width: 100%;
@@ -166,9 +188,9 @@ nav{
     content: "";
     left: 0;
     bottom: 0;
-    right: 0;
-    top: 0;
-     background: rgba(1,196,223,1);
+    /* right: 0;
+    top: 0; */
+    background: rgba(1,196,223,1);
     transition: all 0.3s ease;
   }
   .btn-3 span:before {
@@ -199,3 +221,7 @@ nav{
     box-shadow: 2px 4px 8px rgba(0,0,0,0.1);
 }
 
+.out{
+    color: rgb(1,196,223);
+    align-items: center;
+}

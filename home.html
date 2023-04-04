@@ -14,17 +14,17 @@
             <div class="inputs_labels">
                 Principal Amount (₹):
             </div>
-            <div class="sliders">
+            <!-- <div class="sliders">
                 <div class="sliderValue">
                     <input type="range" min="1000" max="10000000" value="100" steps="1000" id="amt">
                 </div>
                 <div class="field">
-                    <div class="val1">200</div>
+                    <div class="val1">0</div>
                 </div>
-            </div>
-            <!-- <div class="sliders">
-                <input type="number" id="amt">
             </div> -->
+            <div class="sliders">
+                <input type="number" id="amt">
+            </div>
         </div>
         <div class="container">
             <div class="inputs_labels">
@@ -35,7 +35,7 @@
                     <input type="range" min="1" max="360" value="100" steps="1" id="time">
                 </div>
                 <div class="field">
-                    <div class="val2">200</div>
+                    <div class="val2">0</div>
                 </div>
             </div>
         </div>
@@ -50,21 +50,21 @@
     </section>
 
     <div class="btn">
-        <button class="custom-btn btn-3" id="calc"><span>Read More</span></button>
+        <button class="custom-btn btn-3" id="calc"><span>Calculate</span></button>
     </div>
 
     <section class="output_">
         <div class="labels" id="a">
             Total Amount to be paid: (₹):
-            <div class="pay"></div>
+            <div class="out pay"></div>
         </div>
         <div class="labels" id="b">
             EMI per Month (₹):
-            <div class="emi"></div>
+            <div class="out emi"></div>
         </div>
         <div class="labels" id="c">
             Compound Interest: (₹):
-            <div class="inter"></div>
+            <div class="out inter"></div>
         </div>
         
     </section>
